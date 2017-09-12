@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bodor.com.segmentedbuttongroup.MainActivity">
+
+    <co.ceryle.segmentedbutton.RoundedCornerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <co.ceryle.segmentedbutton.SegmentedButtonGroup
+            android:id="@+id/buttongroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:sbg_animateSelector="bounce"
+            app:sbg_animateSelectorDuration="100"
+            app:sbg_backgroundColor="@android:color/holo_blue_bright"
+            app:sbg_dividerColor="@android:color/holo_orange_dark"
+            app:sbg_dividerPadding="5dp"
+            app:sbg_dividerRadius="3dp"
+            app:sbg_dividerSize="3dp"
+            app:sbg_ripple="true"
+            app:sbg_rippleColor="@android:color/holo_red_light"
+            app:sbg_selectorColor="@android:color/holo_blue_dark"
+            app:sbg_selectorTextColor="#000"
+            app:sbg_shadow="true"
+            app:sbg_shadowElevation="3dp"
+            app:sbg_shadowMargin="3dp"
+            >
+
+            <Button
+                android:text="login"
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="register"
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="quit"
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </co.ceryle.segmentedbutton.SegmentedButtonGroup>
+
+
+    </co.ceryle.segmentedbutton.RoundedCornerLayout>
+
+</RelativeLayout>
